@@ -60,4 +60,8 @@ jobs:
           app-name: 'sample-web-app-kousar'
           slot-name: 'Production'
           package: '*.jar'
+      - name: Output Web App URL
+        if: success()
+        run: echo "✅ Deployment successful! Your app is live at:https://sample-web-app-kousar.azurewebsites.net"
+
           
